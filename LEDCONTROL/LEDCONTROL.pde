@@ -66,7 +66,7 @@ void setup()
   //try connecting to serial port
   try{
   serialConnection = true;
-  String portName = Serial.list()[0]; //port 0
+  String portName = Serial.list()[0]; //port 0 for pc and port 1 for mac
   arduinoPort = new Serial(this, portName, 9600);
   println("COM3 connected");
   }

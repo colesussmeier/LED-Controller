@@ -14,4 +14,4 @@ The arduino IDE is required to run the code in the LEDS (Arduino) folder. The Fa
 
 In order to setup the audio signal loop for the beat detection, Windows users will need to go to Sound Panel->Recording->Right click to show disabled devices->Enable Stereo Mix. For Mac, an alternative to stereo mix will need to be downloaded. Without this, the program will still work, however the audio signal will come from the mic input and may not behave well.
 
-Mac Users: When defining port name in the Processing file, the COM port may not be 0th in the list, so if this is the case the 0 will need to get changed to a 1 in order to establish a connection. 
+Mac users: When defining port name in the Processing file, the COM port may not be 0th in the list, so if this is the case the 0 will need to get changed to a 1 in order to establish a connection. 

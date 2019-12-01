@@ -5,7 +5,7 @@ LED-Controller provides a user interface written in Processing 3 in order to con
 
 # Setup
 ## Hardware
-Below is a wiring diagram for two sets of WS2812B lights being controlled by an Arduino Mega. The use of two LED strips is not reflected in the software, but it can be easily added by sending signals to more than one data pin. The Mega is not required but it provides plenty of memory to allow for scalability. 
+Below is a wiring diagram for two sets of WS2812B lights being controlled by an Arduino. The use of two LED strips is not reflected in the software, but it can be easily added by sending signals to more than one data pin.
 
 ![alt text](https://github.com/colesussmeier/LED-Controller/blob/master/WiringDiagram.png)
 

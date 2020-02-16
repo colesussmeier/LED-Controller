@@ -1,8 +1,9 @@
 
 //Initialize fastLed variables
 #include <FastLED.h>
-#define NUM_LEDS    150
+#define NUM_LEDS    300
 #define DATA_PIN    5
+#define DATA_PIN_1  7
 #define CHIPSET     WS2812B
 #define COLOR_ORDER GRB
 
@@ -21,7 +22,8 @@ void fadeall() { for(int i = 0; i < NUM_LEDS; i++) { leds[i].nscale8(250); } }
 void setup() {
   Serial.begin(9600);
   Serial.setTimeout(1000);
-  LEDS.addLeds<CHIPSET,DATA_PIN,COLOR_ORDER>(leds,NUM_LEDS);
+  //LEDS.addLeds<CHIPSET,5,COLOR_ORDER>(leds,NUM_LEDS);
+  LEDS.addLeds<CHIPSET,7,COLOR_ORDER>(leds,NUM_LEDS);
   LEDS.setBrightness(255);
   
 }
@@ -43,7 +45,7 @@ void loop() {
 if(mode==1) { 
   fadeToBlackBy( leds, NUM_LEDS, 20);
   byte dothue = 0;
-  for( int i = 0; i < 8; i++) {
+  for( int i = 0; i < 5; i++) {
     leds[beatsin16(i+14,0,NUM_LEDS)] |= CHSV(dothue, 250, 255);
     dothue += 32;
     }
